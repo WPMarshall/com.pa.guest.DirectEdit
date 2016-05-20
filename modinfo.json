@@ -1,0 +1,72 @@
+{
+    "context": "client",
+    "identifier": "com.pa.guest.DirectEdit",
+    "display_name": "DirectEdit",
+    "description": "A precise and unrestricted interface for system editing. Made by Guest, distributed by WPMarshall",
+    "author": "Guest, WPMarshall",
+    "version": "0.5.0 [WIP]",
+    "build": "85138",
+    "date": "2015/08/01",
+    "signature": "http://i.imgur.com/Dp6p2Gw.jpg",
+    "forum": "https://forums.uberent.com/threads/wip-directedit.67763/",
+    "category": [
+        "system-editor",
+        "ui"
+    ],
+    "scenes": {
+        "system_editor": [
+            "coui://ui/mods/DirectEdit/init.js",
+            "coui://ui/mods/DirectEdit/math.js",
+			
+            "coui://ui/mods/DirectEdit/classes/BrushWrapper.js",
+            "coui://ui/mods/DirectEdit/classes/MetalWrapper.js",
+            "coui://ui/mods/DirectEdit/classes/SpawnWrapper.js",
+            "coui://ui/mods/DirectEdit/classes/WrapperList.js",
+            "coui://ui/mods/DirectEdit/classes/SelectionManager.js",
+            "coui://ui/mods/DirectEdit/classes/ToolManager.js",
+            "coui://ui/mods/DirectEdit/classes/TabController.js",
+			
+            "coui://ui/mods/DirectEdit/planet.js",
+			
+            "coui://ui/mods/DirectEdit/prepUI.js",
+            "coui://ui/mods/DirectEdit/api.js",
+			
+            "coui://ui/mods/DirectEdit/res/DirectEdit.css",
+            "coui://ui/mods/DirectEdit/res/panel_main.html",
+            "coui://ui/mods/DirectEdit/res/panel_secondary.html",
+            "coui://ui/mods/DirectEdit/res/planetDetail.html",
+            "coui://ui/mods/DirectEdit/res/brushDetail.html",
+            "coui://ui/mods/DirectEdit/res/metalDetail.html",
+            "coui://ui/mods/DirectEdit/res/spawnDetail.html",
+			
+            "coui://ui/mods/DirectEdit/startUI.js",
+			
+			
+			
+            "coui://ui/mods/DirectEdit/stock_tools/brush/centerReflect.js",
+            "coui://ui/mods/DirectEdit/stock_tools/brush/rotate.js",
+            "coui://ui/mods/DirectEdit/stock_tools/brush/planeReflect.js",
+            "coui://ui/mods/DirectEdit/stock_tools/brush/addElevation.js",
+            "coui://ui/mods/DirectEdit/stock_tools/brush/multiplyScale.js",
+            "coui://ui/mods/DirectEdit/stock_tools/brush/invert.js",
+            "coui://ui/mods/DirectEdit/stock_tools/brush/randomizePsi.js",
+			
+            "coui://ui/mods/DirectEdit/stock_tools/metal/centerReflect.js",
+            "coui://ui/mods/DirectEdit/stock_tools/metal/rotate.js",
+            "coui://ui/mods/DirectEdit/stock_tools/metal/planeReflect.js",
+			
+            "coui://ui/mods/DirectEdit/stock_tools/spawn/centerReflect.js",
+            "coui://ui/mods/DirectEdit/stock_tools/spawn/rotate.js",
+            "coui://ui/mods/DirectEdit/stock_tools/spawn/planeReflect.js",
+			
+            "coui://ui/mods/DirectEdit/stock_tools/planet/resize.js"
+        ]
+    },
+    "id": "DirectEdit",
+    "icon": "",
+    "priority": 137,
+    "enabled": true,
+	"dependencies": [
+		"com.pa.raevn.rfloatframe"
+	]
+}
