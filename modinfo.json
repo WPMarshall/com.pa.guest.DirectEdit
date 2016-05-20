@@ -2,16 +2,18 @@
     "context": "client",
     "identifier": "com.pa.guest.DirectEdit",
     "display_name": "DirectEdit",
-    "description": "A precise and unrestricted interface for system editing. Made by Guest, distributed by WPMarshall",
+    "description": "A precise and unrestricted interface for system editing. Made by Guest, distributed by WPMarshall.",
     "author": "Guest, WPMarshall",
-    "version": "0.5.0 [WIP]",
+    "version": "0.5.1",
     "build": "85138",
     "date": "2015/08/01",
-    "signature": "http://i.imgur.com/Dp6p2Gw.jpg",
+    "signature": "not yet implemented",
     "forum": "https://forums.uberent.com/threads/wip-directedit.67763/",
     "category": [
         "system-editor",
-        "ui"
+        "ui",
+		"maps",
+		"planets",
     ],
     "scenes": {
         "system_editor": [
@@ -63,7 +65,7 @@
         ]
     },
     "id": "DirectEdit",
-    "icon": "",
+    "icon": "http://i.imgur.com/Dp6p2Gw.jpg",
     "priority": 137,
     "enabled": true,
 	"dependencies": [
