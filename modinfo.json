@@ -5,7 +5,7 @@
     "description": "A precise and unrestricted interface for system editing. Made by Guest, distributed by WPMarshall.",
     "author": "Guest, WPMarshall",
     "version": "0.5.1",
-    "build": "85138",
+    "build": "89755",
     "date": "2015/08/01",
     "signature": "not yet implemented",
     "forum": "https://forums.uberent.com/threads/wip-directedit.67763/",
@@ -13,7 +13,7 @@
         "system-editor",
         "ui",
 		"maps",
-		"planets",
+		"planets"
     ],
     "scenes": {
         "system_editor": [
