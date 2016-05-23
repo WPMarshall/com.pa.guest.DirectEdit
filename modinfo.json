@@ -4,9 +4,9 @@
     "display_name": "DirectEdit",
     "description": "A precise and unrestricted interface for system editing. Made by Guest, distributed by WPMarshall.",
     "author": "Guest, WPMarshall",
-    "version": "0.5.1",
+    "version": "0.5.15",
     "build": "89755",
-    "date": "2015/08/01",
+    "date": "2016/05/23",
     "signature": "not yet implemented",
     "forum": "https://forums.uberent.com/threads/wip-directedit.67763/",
     "category": [
@@ -66,7 +66,7 @@
     },
     "id": "DirectEdit",
     "icon": "http://i.imgur.com/Dp6p2Gw.jpg",
-    "priority": 137,
+    "priority": 100,
     "enabled": true,
 	"dependencies": [
 		"com.pa.raevn.rfloatframe"
