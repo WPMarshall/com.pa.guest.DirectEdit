@@ -72,6 +72,19 @@
 						<td>Mirrored</td>
 						<td class="dEdit_inputCell"><input type="checkbox" data-bind="checked: dEdit.staticVars.brushPropAliases.orientationReversed"></input></td>
 					</tr>
+					<tr><td colspan="2" style="height:6px"></td></tr>
+					<tr>
+						<td style="color:#aaa">Latitude</td>
+						<td class="dEdit_inputCell" style="color:#aaa" data-bind="text: dEdit.staticVars.brushPropAliases.latitude().toFixed(2) + '\u00B0'"></td>
+					</tr>
+					<tr>
+						<td style="color:#aaa">Longitude</td>
+						<td class="dEdit_inputCell" style="color:#aaa" data-bind="text: dEdit.staticVars.brushPropAliases.longitude().toFixed(2) + '\u00B0'"></td>
+					</tr>
+					<tr>
+						<td style="color:#aaa">Altitude</td>
+						<td class="dEdit_inputCell" style="color:#aaa" data-bind="text: dEdit.staticVars.brushPropAliases.altitude().toFixed(1)"></td>
+					</tr>
 					<tr>
 						<td>Pathable</td>
 						<td class="dEdit_inputCell"><input type="checkbox" data-bind="checked: dEdit.currentSpec.brushList.selectionManager.current().pathable"></input></td>
@@ -154,6 +167,20 @@
 					<tr data-bind="visible: dEdit.brushTools.selectedType().activeFields.vec_direction">
 						<td><span class="dEdit_xyz">(z)</span></td>
 						<td class="dEdit_inputCell"><input type="number" data-bind="valueUpdate: 'afterkeydown', value: dEdit.staticVars.toolFields.vec_direction[2]"></input></td>
+					</tr>
+					<tr data-bind="visible: dEdit.brushTools.selectedType().activeFields.vec_direction">
+						<td colspan="2">
+							<div class="dEdit_axisPresets">
+								<button class="dEdit_axisBtn dEdit_axisX" data-bind="click: function(){ dEdit.setAxisPreset(1,0,0); }">X</button>
+								<button class="dEdit_axisBtn dEdit_axisY" data-bind="click: function(){ dEdit.setAxisPreset(0,1,0); }">Y</button>
+								<button class="dEdit_axisBtn dEdit_axisZ" data-bind="click: function(){ dEdit.setAxisPreset(0,0,1); }">Z</button>
+								<span class="dEdit_axisLegend">
+									<span class="dEdit_axisLabel" style="color:#ff4444">X</span>
+									<span class="dEdit_axisLabel" style="color:#44ff44">Y</span>
+									<span class="dEdit_axisLabel" style="color:#4488ff">Z</span>=poles
+								</span>
+							</div>
+						</td>
 					</tr>
 					
 					<tr data-bind="visible: dEdit.brushTools.selectedType().activeFields.vec_scaling">

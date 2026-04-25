@@ -213,3 +213,30 @@
 .dEdit_welcome div{
 	margin-bottom: 10px;
 }
+
+.dEdit_axisPresets {
+	padding: 4px 0;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.dEdit_axisBtn {
+	width: 32px !important;
+	height: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 0;
+	margin: 0 !important;
+}
+.dEdit_axisX { color: #ff4444 !important; }
+.dEdit_axisY { color: #44ff44 !important; }
+.dEdit_axisZ { color: #4488ff !important; }
+.dEdit_axisLegend {
+	color: #999;
+	font-size: 11px;
+	margin-left: 4px;
+}
+.dEdit_axisLabel {
+	font-weight: bold;
+	font-size: 12px;
+}

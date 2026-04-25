@@ -102,14 +102,41 @@ model.dEdit.staticVars.brushPropAliases = new function() {
 	});
 
 	// Spherical coordinate handling
-	// Will add input capability "soon"
 	self.theta = ko.computed({
 		read: function() {
 			var x = current().position[0]();
 			var y = current().position[1]();
 			var z = self.z();
-			
+
 			return(Math.atan2(x,y));
+		}
+	});
+
+	// Latitude in degrees (-90 at south pole, +90 at north pole)
+	self.latitude = ko.computed({
+		read: function() {
+			var x = current().position[0]();
+			var y = current().position[1]();
+			var z = self.z();
+			var r_xy = Math.sqrt(x*x + y*y);
+			return dEdit.radToDeg(Math.atan2(z, r_xy));
+		}
+	});
+
+	// Longitude in degrees (-180 to +180)
+	self.longitude = ko.computed({
+		read: function() {
+			return dEdit.radToDeg(self.theta());
+		}
+	});
+
+	// Distance from planet center
+	self.altitude = ko.computed({
+		read: function() {
+			var x = current().position[0]();
+			var y = current().position[1]();
+			var z = self.z();
+			return Math.sqrt(x*x + y*y + z*z);
 		}
 	});
 	
@@ -122,6 +149,14 @@ model.dEdit.staticVars.brushPropAliases = new function() {
 			current().rotation(dEdit.degToRad(value) - self.theta());
 		}
 	});
+};
+
+/* ==================== Axis preset helpers ==================== */
+
+model.dEdit.setAxisPreset = function(x, y, z) {
+	model.dEdit.staticVars.toolFields.vec_direction[0](x);
+	model.dEdit.staticVars.toolFields.vec_direction[1](y);
+	model.dEdit.staticVars.toolFields.vec_direction[2](z);
 };
 
 /* ==================== Tool manager initializations ==================== */

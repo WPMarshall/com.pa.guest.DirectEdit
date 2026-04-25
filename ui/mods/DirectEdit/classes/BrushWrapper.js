@@ -51,6 +51,7 @@ dEdit.BrushWrapper = function(brush) {
 	// weightScale doesn't matter
 	self.mirrored = ko.observable(self.original.mirrored);
 	// twinIDs are unlinked when writing
+	self.twinId = ko.observable(self.original.twinId);
 	// flooded is set automatically on load
 	self.pathable = ko.observable(self.original.pathable);
 	self.mergeable = ko.observable(self.original.mergeable);
@@ -70,7 +71,7 @@ dEdit.BrushWrapper = function(brush) {
 		
 		
 		brushSpec.mirrored = self.mirrored();
-		brushSpec.twinId = 0; // Unlink twinIDs to avoid issues with clones
+		//brushSpec.twinId = 0; // Unlink twinIDs to avoid issues with clones
 		
 		brushSpec.pathable = self.pathable();
 		brushSpec.mergeable = self.mergeable();
