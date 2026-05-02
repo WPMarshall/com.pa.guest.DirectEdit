@@ -4,9 +4,9 @@
     "display_name": "Direct Edit 2, More Edit",
     "description": "*IN ALPHA* A precise and unrestricted interface for system editing. Made by Guest, updated by Ferretmaster, distributed by WPMarshall. WARNING - BACK UP YOUR SYSTEMS! Some bugs may cause planet systems to be destroyed/rewritten/overwritten! Use at own risk as the mod was never 'completed'!",
     "author": "Guest, WPMarshall",
-    "version": "1.0.11",
+    "version": "1.1.0",
     "build": "124638",
-    "date": "2026-04-27",
+    "date": "2026-05-02",
     "signature": "not yet implemented",
     "forum": "https://forums.uberent.com/threads/wip-directedit.67763/",
     "category": [
@@ -65,7 +65,7 @@
         ]
     },
     "id": "DirectEdit",
-    "icon": "coui://ui/mods/DirectEdit/directEdit2.jpg",
+    "icon": "https://raw.githubusercontent.com/WPMarshall/com.pa.guest.DirectEdit/refs/heads/master/directEdit2.jpg",
     "priority": 100,
     "enabled": true,
 	"dependencies": [
